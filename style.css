@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	color: white;
 
-	background: linear-gradient(0deg, hsla(280, 38%, 49%, 1) 0%, hsla(260, 53%, 41%, 1) 100%);
+	background: black;
 }
 
 p, h1, h2, h3, h4, h5 {
@@ -276,6 +276,7 @@ footer > .social-media-icons {
 		flex: 0 1 30%;
 	}
 }
+
 
 
 
