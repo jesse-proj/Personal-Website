@@ -122,8 +122,6 @@ footer > .social-media-icons {
 
 .window {
 	border: 5px solid #885eb5;
-
-	font-family: consolas;
 }
 
 .window-title {
@@ -278,6 +276,7 @@ footer > .social-media-icons {
 		flex: 0 1 30%;
 	}
 }
+
 
 
 
