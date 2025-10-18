@@ -16,7 +16,6 @@
 				<b><p> FAFEFIFOFUFF </p></b>
 			</div>
 			<div class = 'right-nav-buttons'>
-				<p> Skills </p>
 				<p> Projects </p>
 				<p> Blog </p>
 			</div>
@@ -56,7 +55,7 @@
 		<div class = 'outer-container'>
 			<div id = 'inner-flex-container'>
 
-				<div>
+				<div style = 'display: flex; flex-direction: column;'>
 					<div class = 'window reveal' data-title = 'Introduction' style = 'margin-bottom: 1em;'>
 						<div class = 'menubar'>
 							<p> File </p>
@@ -68,11 +67,11 @@
 								<img src = 'Assets/Misc/Profile.jpeg' style = 'width: 100%;'>
 							</div>
 
-							<p style = 'text-align: justify; font-size: 0.9rem;'> I’m in my second year of pursuing a Bachelor of Science in Information Technology at the University of Santo Tomas. I’m interested in game development and enjoy both making and playing games. I enjoy making random useful apps, too.</p>
+							<p style = 'text-align: justify;'> I’m in my second year of pursuing a Bachelor of Science in Information Technology at the University of Santo Tomas. I’m interested in game development and enjoy both making and playing games. I enjoy making random useful apps, too.</p>
 						</div>
 					</div>
 
-					<div class = 'window reveal' data-title = 'Blog Updates'>
+					<div class = 'window reveal' data-title = 'Blog Updates' style = 'flex: 1'>
 						<div class = 'menubar'>
 							<p> File </p>
 							<p> Edit </p>
@@ -108,7 +107,7 @@
 					</div>
 				</div>
 
-				<div>
+				<div style = 'display: flex; flex-direction: column;'>
 					<div class = 'window reveal' data-title = 'Projects' style = ' margin-bottom: 1em;'>
 						<div class = 'menubar'>
 							<p> File </p>
@@ -129,13 +128,26 @@
 						</div>
 					</div>
 
-					<div class = 'window reveal' data-title = 'Current Status'>
+					<div class = 'window reveal' data-title = 'Current Status' style = 'flex: 1; min-height: 0;'>
 						<div class = 'menubar'>
 							<p> File </p>
 							<p> Edit </p>
 						</div>
 
-						<div class = 'window-content' style = 'height: 16.5vh;'>
+						<div class = 'window-content' style = 'padding: 1rem'>
+							<div style = 'display: flex; gap: 1rem;' id = 'status-window-content'>
+								<div id = 'image-div'>
+									<img src = 'Assets/Emotions/Angry.gif' style = 'image-rendering: pixelated; width: 100%;'>
+								</div>
+
+								<div style = 'flex: 1; padding-bottom: 1.5rem;'>
+									<p> Mood: Angry </p>
+									<p> Task: Homework </p>
+									<p style = 'border-bottom: 2px solid white;' id = 'bordered-text'> Last updated: 19/10/2025</p>
+								</div>
+							</div>
+
+							<p style = 'text-align: center;'> "Why is this so nakakatamad." </p>
 						</div>
 					</div>
 				</div>
