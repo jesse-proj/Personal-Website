@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = 'utf-8'>
+		<meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
+		<title> Home </title>
+
+		<link rel = 'stylesheet' href = 'style.css'>
+	</head>
+
+	<body>
+		<div class = 'navbar'>
+			<div class = 'left-nav-buttons'>
+				<h3> FAFEFIFOFUFF </h3>
+			</div>
+			<div class = 'right-nav-buttons'>
+				<p> Skills </p>
+				<p> Projects </p>
+				<p> Blog </p>
+			</div>
+		</div>
+
+		<div class = 'parallax'>
+			<img src = 'Assets/Parallax/1.png' data-speed = 0 style = 'z-index: 1;'>
+			<img src = 'Assets/Parallax/2.png' data-speed = 0.7 style = 'z-index: 2; top: 15%'>
+			<img src = 'Assets/Parallax/3.png' data-speed = 0.5 style = 'z-index: 3; top: 15%'>
+			<img src = 'Assets/Parallax/4.png' data-speed = 0.3 style = 'z-index: 4; top: 15%'>
+			<img src = 'Assets/Parallax/5.png' data-speed = 0.1 style = 'z-index: 5; top: 15%'>
+			<img src = 'Assets/Parallax/6.png' data-speed = 0 style = 'z-index: 6; top: 15%'>
+
+			<div class = 'window layer' data-title = "Faf's Bio" id = 'bio-window' data-speed = 1.4>
+				<div class = 'menubar'>
+					<p> File </p>
+					<p> Edit </p>
+				</div>
+
+				<div class = 'window-content'>
+					<div style = 'height: 20vh;'> 
+						<img src = 'Assets/Emotions/Sleepy.gif' style = 'image-rendering: pixelated; height: 100%;'>
+					</div>
+
+					<div style = 'width: 100%; font-size: 0.9em;'> 
+						<p class = 'file-data'> File: Sleepy.gif </p>
+						<p class = 'file-data'> Location: Assets/Emotions/ </p>
+
+						<p style = 'text-align: center;'> 
+							Web Developer, Game Developer, and Information Technology Student
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class = 'outer-container'>
+			<div id = 'inner-flex-container'>
+
+				<div>
+					<div class = 'window reveal' data-title = 'Introduction' style = 'margin-bottom: 1em;'>
+						<div class = 'menubar'>
+							<p> File </p>
+							<p> Edit </p>
+						</div>
+
+						<div class = 'window-content' id = 'introduction-content'>
+							<div>
+								<img src = 'Assets/Misc/Profile.jpeg' style = 'width: 100%;'>
+							</div>
+
+							<p style = 'text-align: justify; font-size: 0.9rem;'> I’m in my second year of studying Bachelor of Science in Information Technology at the University of Santo Tomas. I’m interested in game development and enjoy both making and playing games. I enjoy making random useful apps, too. </p>
+						</div>
+					</div>
+
+					<div class = 'window reveal' data-title = 'Blog Updates'>
+						<div class = 'menubar'>
+							<p> File </p>
+							<p> Edit </p>
+						</div>
+
+						<div class = 'window-content' style = 'height: 45vh; padding: 1em'>
+							<div style = 'display: flex; gap: 1em; justify-content: center;'>
+
+								<div style = 'width: 95%;'>
+									<b><p style = 'text-align: justify;'> My Girlfriend is at my Place!	 </p></b>
+									<div style = 'display: flex; justify-content: space-between;'>
+										<p style = 'text-align: justify;'> [17/10/2025] </p>
+										<p style = 'text-align: justify;'> 11:50 AM </p>
+									</div>
+								</div>
+							</div>
+
+							<hr style = 'margin-top: 1em; margin-bottom: 1em'>
+
+							<div style = 'display: flex; gap: 1em; justify-content: center;'>
+
+								<div style = 'width: 95%;'>
+									<b><p style = 'text-align: justify;'> Finally Got The Website Set Up </p></b>
+									<div style = 'display: flex; justify-content: space-between;'>
+										<p style = 'text-align: justify;'> [17/10/2025] </p>
+										<p style = 'text-align: justify;'> 10:50 AM </p>
+									</div>
+								</div>
+							</div>
+
+							<hr style = 'margin-top: 1em; margin-bottom: 1em'>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class = 'window reveal' data-title = 'Projects' style = ' margin-bottom: 1em;'>
+						<div class = 'menubar'>
+							<p> File </p>
+							<p> Edit </p>
+						</div>
+
+						<div class = 'window-content' id = 'project-previews'>
+							<div style = 'display: flex; gap: 1em'>
+								<img src = 'Assets/ProjectPreviews/Newnote.png' style = 'width: 35%;'>
+								<p style = 'text-align: justify;'> <b>Newnote</b> - a fully-fledged note editing app that features rich text editing, tags, and many other useful tools such as sticky mode.</p>
+							</div>
+
+							<hr style = 'margin-top: 1em; margin-bottom: 1em;'>
+
+							<div style = 'display: flex; gap: 1em'>
+								<img src = 'Assets/ProjectPreviews/AnatomyExplorer.png' style = 'width: 35%;'>
+								<p style = 'text-align: justify;'> <b>Anatomy Explorer</b> - a medical-themed quiz website designed to facilitate learning. It features timed quizzes, PvP, and an anatomy dissector. </p>
+							</div>
+
+							<hr style = 'margin-top: 1em; margin-bottom: 1em;'>
+
+						</div>
+					</div>
+
+					<div class = 'window reveal' data-title = 'Current Status'>
+						<div class = 'menubar'>
+							<p> File </p>
+							<p> Edit </p>
+						</div>
+
+						<div class = 'window-content' style = 'height: 20vh;'>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<footer>
+			<div class = 'social-media-icons'>
+				<img src = 'Assets/SocialMediaIcons/Twitter.svg'>
+				<img src = 'Assets/SocialMediaIcons/Itchio.svg'>
+				<img src = 'Assets/SocialMediaIcons/Github.svg'>
+			</div>
+			<p><b>Contact details:</b> jian.santiago39@gmail.com</p>
+		</footer>
+
+		<script src = 'script.js'>
+		</script>
+	</body>
+</html>
