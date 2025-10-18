@@ -218,6 +218,8 @@ footer > .social-media-icons {
 	margin: auto; 
 
 	flex-wrap: wrap;
+
+	/*align-items: stretch;*/
 }
 
 @media (max-width: 767px) {
@@ -271,11 +273,11 @@ footer > .social-media-icons {
 
 @media (min-width: 768px) {
 	#introduction-content p {
-		flex: 1 1 65%;
+		flex: 1 1 63%;
 	}
 
 	#introduction-content div {
-		flex: 0 1 30%;
+		flex: 0 1 32%;
 	}
 }
 
@@ -305,6 +307,26 @@ footer > .social-media-icons {
 	.project-description img{
 		width: 40%;
 		height: auto;
+	}
+}
+
+@media (max-width: 767px) {
+	#status-window-content #image-div {
+		width: 28%;
+	}
+
+	#status-window-content #bordered-text {
+		padding-bottom: 1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	#status-window-content #image-div{
+		width: 18%;
+	}
+
+	#status-window-content #bordered-text {
+		padding-bottom: 1.2rem;
 	}
 }
 
