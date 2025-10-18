@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	color: white;
 
-	background: black;
+	background: linear-gradient(0deg, hsla(280, 38%, 49%, 1) 0%, hsla(260, 53%, 41%, 1) 100%);
 }
 
 p, h1, h2, h3, h4, h5 {
@@ -53,8 +53,6 @@ footer > .social-media-icons {
 
 .navbar p {
 	margin-right: 20px;
-
-	font-size: 1.2rem;
 }
 
 .right-nav-buttons, .left-nav-buttons {
@@ -64,22 +62,18 @@ footer > .social-media-icons {
 
 
 @media (max-width: 767px) {
-	.navbar h3 {
+	.navbar p {
 		margin-left: 5px;
 		margin-right: 5px;
-	}
-	.navbar p {
-		margin-right: 5px;
+		font-size: 1rem;
 	}
 }
 
 @media (min-width: 768px) {
-	.navbar h3 {
-		margin-left: 20px;
-		margin-right: 20px;
-	}
 	.navbar p {
-		margin-right: 20px;
+		margin-left: 15px;
+		margin-right: 15px;
+		font-size: 1.2rem;
 	}
 }
 /* Parallax background */
@@ -172,18 +166,26 @@ footer > .social-media-icons {
 	z-index: 5;
 
 	box-shadow: 4px 4px black;
+
+	font-size: 0.9rem;
 }
 
 @media (max-width: 767px) {
 	#bio-window {
 		width: 90vw;
-		font-size: 0.8rem;
+	}
+
+	#bio-window {
+		width: 90vw;
 	}
 }
 
 @media (min-width: 768px) {
 	#bio-window {
 		width: 30vw;
+	}
+	#short-bio {
+		margin-top: 1rem
 	}
 }
 
@@ -277,7 +279,31 @@ footer > .social-media-icons {
 	}
 }
 
+.project-description {
+	border-bottom: 2px solid white;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
 
+	display: flex; 
+	gap: 1em; 
+	justify-content: center;
 
+	flex-direction: row;
+}
 
+@media (max-width: 767px) {
+	.project-description {
+		flex-direction: column;
+	}
 
+	.project-description img{
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.project-description img{
+		width: 40%;
+		height: auto;
+	}
+}
