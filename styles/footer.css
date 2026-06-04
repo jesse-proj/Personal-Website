@@ -15,8 +15,8 @@ footer > .footer-content {
 	justify-content: space-between; 
 	text-align: justify;
 
-	padding-left: 7rem; 
-	padding-right: 7rem;
+	padding-left: 2rem; 
+	padding-right: 2rem;
 
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -25,7 +25,7 @@ footer > .footer-content {
 
 	width: 100%;
 
-	max-width: 1500px;
+	max-width: 900px;
 }         
 
 @media (max-width: 1080px){
