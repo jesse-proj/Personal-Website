@@ -1,64 +1,77 @@
+:root {
+	--accent-color-primary: #cd90b9;
+	--accent-color-secondary: #A65EAD;
+	--neutral-color: #808080;
+
+	--color-primary: #ffffff;
+	--color-secondary: #000000;
+	--color-border: #211e24;
+
+	--background-primary: #02151C;
+	--background-secondary: #010A0D;
+	--background-accent: var(--color-accent);
+}
+
  .github-graph {
-	margin-top: 1rem;
-	width: 100%;
-	display: none;
+ 	margin: 1rem auto 0 auto;
+ 	width: max-content;
+ 	display: none;
+ }
+
+ .github-graph.active {
+ 	display: grid;
+
+ 	grid-template-rows: repeat(7, 0.6rem);
+ 	grid-auto-columns: 0.6rem;
+
+ 	grid-auto-flow: column;
+
+ 	gap: 4px 2px;
+ }
+
+ .github-graph>div {
+ 	width: 0.6rem;
+ 	height: 0.6rem;
+ 	aspect-ratio: 1;
+ 	border-radius: 2px;
+ }
+
+.github-day[data-level="NONE"] {
+	background-color: #051a21 !important;
 }
 
-.github-graph.active {
-	display: grid;
-
-	grid-template-rows: repeat(7, 11px);
-
-	grid-auto-flow: column;
-
-	gap: 6px 3px;	
+.github-day[data-level="FIRST_QUARTILE"] {
+	background-color: #4a283f !important;
 }
 
-.github-graph > div {
-	width: 0.8rem;
-	height: 0.8rem;
-	border-radius: 3px;
+.github-day[data-level="SECOND_QUARTILE"] {
+	background-color: #8c4c77 !important;
 }
 
-.github-graph > .FIRST_QUARTILE {
-	background: #cd90b9;
-	opacity: 0.3;
+.github-day[data-level="THIRD_QUARTILE"] {
+	background-color: var(--accent-color-primary) !important;
 }
 
-.github-graph > .SECOND_QUARTILE {
-	background: #cd90b9;
-	opacity: 0.6;
+.github-day[data-level="FOURTH_QUARTILE"] {
+	background-color: var(--accent-color-secondary) !important;
 }
 
-.github-graph > .THIRD_QUARTILE {
-	background: #cd90b9;
-	opacity: 0.8;
-}
+ .github-graph-fallback {
+ 	display: none;
+ }
 
-.github-graph > .FOURTH_QUARTILE {
-	background: #cd90b9;
-	opacity: 1;
-}
+ .github-graph-fallback.active {
+ 	display: block;
+ }
 
-.github-graph > .NONE {
-	background: black;
-	opacity: 0.5;
-}
+ .github-graph-fallback img {
+ 	filter: invert(1) hue-rotate(180deg);
+ 	max-width: 100%;
+ 	height: auto;
+ }
 
-.github-graph-fallback {
-	display: none;
-}
-
-.github-graph-fallback.active{
-	display: block;
-}
-
-.github-graph-fallback img {
-	filter: invert(1) hue-rotate(180deg);
-}
-
-.github-graph-fallback {
-	width: 100%;
-	text-align: center;
-	margin-top: 1rem;
-}
+ .github-graph-fallback {
+ 	width: 100%;
+ 	text-align: center;
+ 	margin-top: 1rem;
+ }

@@ -2,10 +2,16 @@
 	display: flex;
 	gap: 0.5rem;
 	font-size: 0.75rem;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	margin-top: 1rem;
-	overflow-y: auto;
+	overflow-x: auto;
+	overflow-y: hidden;
 	align-content: flex-start;
+	scrollbar-width: none; /* Firefox */
+}
+
+.tag-container::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
 }
 
 .tag-container > p, .tag-container .tag {

@@ -1,19 +1,19 @@
 const parallaxBackground = document.querySelector('.parallax');
+const parallaxLayers = Array.from(parallaxBackground.querySelectorAll('img'));
+const nonImageLayers = parallaxBackground.querySelectorAll('.layer');
+
+for (let i = 0; i < nonImageLayers.length; i++) {
+	parallaxLayers.push(nonImageLayers[i]);
+}
 
 window.addEventListener('scroll', function() {
-	var scrollY = window.scrollY;
-	var parallaxLayers = Array.from(parallaxBackground.querySelectorAll('img'));
-	var nonImageLayers = parallaxBackground.querySelectorAll('.layer')
+	const scrollY = window.scrollY;
 
-	for (var i = 0; i < nonImageLayers.length; i++) {
-		parallaxLayers.push(nonImageLayers[i]);
-	}
+	for (let i = 0; i < parallaxLayers.length; i++) {
+		const layer = parallaxLayers[i];
 
-	for (var i = 0; i < parallaxLayers.length; i++) {
-		var layer = parallaxLayers[i];
-
-		var speed = parseFloat(layer.getAttribute('data-speed'));
-		var moveY = scrollY * speed;
+		const speed = parseFloat(layer.getAttribute('data-speed'));
+		const moveY = scrollY * speed;
 
 		layer.style.transform = 'translateY(' + moveY + 'px)';
 	}
